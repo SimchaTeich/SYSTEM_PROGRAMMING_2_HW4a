@@ -45,7 +45,7 @@ public:
     * print details about the players.
     * full explanation in README.md
     */
-    void print() const;
+    string print() const;
 };
 
 #endif // !TEAM_HPP 

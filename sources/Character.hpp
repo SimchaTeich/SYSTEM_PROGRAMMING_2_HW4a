@@ -47,7 +47,7 @@ public:
     /* 
     * prints some details about the Character.
     */
-    void print() const;
+    string print() const;
 
     /* updates that player is now belongs to team.
     *  actualy, just turn on the _inTeam flag.

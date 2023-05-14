@@ -41,6 +41,7 @@ public:
     /* getters */
     string getName() const;
     Point getLocation() const;
+    char getType() const;
     bool inTeam() const;
 
     /* 

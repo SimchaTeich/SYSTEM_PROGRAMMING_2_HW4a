@@ -3,10 +3,13 @@
 
 #include "Ninja.hpp"
 
-class OldNinja : public Ninja
+namespace ariel
 {
-public:
-    OldNinja(const string& name, const Point& location);
+    class OldNinja : public Ninja
+    {
+    public:
+        OldNinja(const string& name, const Point& location);
+    };
 };
 
 #endif // !OLDNINJA_HPP 

@@ -35,7 +35,7 @@ namespace ariel
         print Point in this format:
         "(x,y)"
         */
-        void print() const;
+        string print() const;
 
         /*
         calc some Point on the line, define by src and dst,

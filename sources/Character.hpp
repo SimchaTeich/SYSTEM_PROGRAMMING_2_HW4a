@@ -6,6 +6,8 @@
 #include "Point.hpp"
 
 using std::string;
+using std::cout;
+using std::endl;
 
 
 namespace ariel
@@ -13,7 +15,7 @@ namespace ariel
     class Character
     {
     private:
-        string& _name;
+        const string& _name;
         Point& _location;
         bool _inTeam;
 
@@ -22,7 +24,7 @@ namespace ariel
         char _type; // 'C' or 'N'
 
     public:
-        Character(const string& name, const Point& location);
+        Character(const string& name, Point& location);
 
         /*
         * check if Character is alive, by checking if

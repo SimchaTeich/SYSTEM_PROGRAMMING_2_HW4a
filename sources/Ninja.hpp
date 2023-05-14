@@ -24,8 +24,7 @@ public:
     * Otherwise, no damage will be done to the enemy.
     */
     void slash(Character *other);
-}
-
+};
 
 
 #endif // !NINJA_HPP

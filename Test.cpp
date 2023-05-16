@@ -108,3 +108,22 @@ TEST_CASE("Trained Ninja")
     alice.slash(&eve);
     CHECK_EQ(eve.isAlive(), false);
 }
+
+
+TEST_CASE("Old Ninja")
+{
+    OldNinja alice("Alice", Point(0,0));
+    OldNinja bob("Bob", Point(8, 0));
+    OldNinja eve("Eve", Point(8.1, 0));
+
+    alice.move(&bob);
+    
+    alice.slash(&bob);
+    alice.slash(&bob);
+    alice.slash(&bob);
+    alice.slash(&eve);
+    alice.slash(&eve);
+    alice.slash(&eve);
+    CHECK_EQ(bob.isAlive(), false);
+    CHECK_EQ(eve.isAlive(), false);
+}

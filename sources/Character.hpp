@@ -16,10 +16,10 @@ namespace ariel
     {
     private:
         const string& _name;
-        Point& _location;
         bool _inTeam;
 
     protected:
+        Point& _location;
         int _hitPoints;
         char _type; // 'C' or 'N'
 

@@ -11,7 +11,7 @@ namespace ariel
         int _speed;
 
     public:
-        Ninja(const string& name, const Point& location);
+        Ninja(const string& name, Point& location);
 
         /*
         * Receives a pointer to the enemy and walks towards the enemy.

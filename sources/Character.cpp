@@ -3,7 +3,7 @@
 using namespace ariel;
 
 
-Character::Character(const string& name, Point& location)
+Character::Character(const string& name, Point location)
     :_name(name), _location(location)
 {
     _inTeam = false;

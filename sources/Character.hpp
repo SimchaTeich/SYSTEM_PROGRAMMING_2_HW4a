@@ -19,12 +19,12 @@ namespace ariel
         bool _inTeam;
 
     protected:
-        Point& _location;
+        Point _location;
         int _hitPoints;
         char _type; // 'C' or 'N'
 
     public:
-        Character(const string& name, Point& location);
+        Character(const string& name, Point location);
 
         /*
         * check if Character is alive, by checking if

@@ -8,7 +8,7 @@ namespace ariel
     class YoungNinja : public Ninja
     {
     public:
-        YoungNinja(const string& name, Point& location);
+        YoungNinja(const string& name, Point location);
     };
 };
 

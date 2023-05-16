@@ -2,7 +2,7 @@
 
 using namespace ariel;
 
-YoungNinja::YoungNinja(const string& name, Point& location)
+YoungNinja::YoungNinja(const string& name, Point location)
     :Ninja(name, location)
 {
     _hitPoints = 100;

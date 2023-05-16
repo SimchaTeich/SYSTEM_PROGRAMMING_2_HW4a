@@ -3,7 +3,7 @@
 using namespace ariel;
 
 
-Ninja::Ninja(const string& name, Point& location)
+Ninja::Ninja(const string& name, Point location)
     : Character(name, location)
 {
     _type = 'N';

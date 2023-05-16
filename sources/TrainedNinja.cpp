@@ -5,6 +5,6 @@ using namespace ariel;
 TrainedNinja::TrainedNinja(const string& name, Point& location)
     :Ninja(name, location)
 {
-    _hitPoints = 100;
-    _speed = 14;
+    _hitPoints = 120;
+    _speed = 12;
 }

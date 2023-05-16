@@ -40,7 +40,6 @@ string Point::print() const
 
 
 // Helps after some changes:
-// https://stackoverflow.com/questions/1800138/given-a-start-and-end-point-and-a-distance-calculate-a-point-along-a-line
 //https://stackoverflow.com/questions/13302396/given-two-points-find-a-third-point-on-the-line
 Point Point::moveToWards(const Point& src, const Point& dst, double distance)
 {

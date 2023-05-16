@@ -7,4 +7,4 @@ OldNinja::OldNinja(const string& name, Point& location)
 {
     _hitPoints = 150;
     _speed = 8;
-}
+};

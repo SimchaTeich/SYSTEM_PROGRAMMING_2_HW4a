@@ -4,32 +4,32 @@
 using namespace ariel;
 
 
-Point::Point(double x, double y) : _x(x), _y(y) {}
+Point::Point(double x, double y) : _x(x), _y(y) {};
 
 
 Point::Point(const Point& other)
 {
     _x = other._x;
     _y = other._y;
-}
+};
 
 
 int Point::x() const
 {
     return _x;
-}
+};
 
 
 int Point::y() const
 {
     return _y;
-}
+};
 
 
 double Point::distance(const Point& other) const
 {
     return sqrt(pow(_x - other._x, 2) + pow(_y - other._y, 2));
-}
+};
 
 
 string Point::print() const
@@ -37,7 +37,7 @@ string Point::print() const
     string pointString = "(" + std::to_string(_x) + ", " + std::to_string(_y) + ")";
     cout << pointString << endl;
     return pointString;
-}
+};
 
 
 // Helps after some changes:

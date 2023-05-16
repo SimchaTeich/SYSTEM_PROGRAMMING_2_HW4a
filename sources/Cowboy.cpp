@@ -8,7 +8,7 @@ Cowboy::Cowboy(const string& name, Point& location)
     _type = 'C';
     _hitPoints = 110;
     reload();
-}
+};
 
 
 void Cowboy::shoot(Character *other)
@@ -18,22 +18,22 @@ void Cowboy::shoot(Character *other)
         other->hit(10);
         _bullets--;
     }
-}
+};
 
 
 bool Cowboy::hasBullets() const
 {
     return _bullets >= 1;
-}
+};
 
 
 bool Cowboy::hasBoolets() const
 {
     return hasBullets();
-}
+};
 
 
 void Cowboy::reload()
 {
     _bullets += 6;
-}
+};

@@ -8,13 +8,13 @@ Ninja::Ninja(const string& name, Point& location)
 {
     _type = 'N';
     _speed = 0;
-}
+};
 
 
 void Ninja::move(Character *other)
 {
     _location = Point::moveToWards(_location, other->getLocation(), _speed);
-}
+};
 
 
 void Ninja::slash(Character *other)
@@ -23,4 +23,4 @@ void Ninja::slash(Character *other)
     {
         other->hit(40);
     }
-}
+};

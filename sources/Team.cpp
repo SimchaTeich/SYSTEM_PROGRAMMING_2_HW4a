@@ -9,7 +9,7 @@ Team::Team(Character *captain)
     _amountOfCowboys = 0;
     _amountOfNinjas = 0;
     add(captain);
-}
+};
 
 
 void Team::add(Character *player)
@@ -25,7 +25,7 @@ void Team::add(Character *player)
             _ninjas[_amountOfNinjas++] = (Ninja *)player;
         }
     }
-}
+};
 
 
 Team::~Team()
@@ -41,13 +41,13 @@ Team::~Team()
     {
         delete _ninjas[i];
     }
-}
+};
 
 
 void Team::attack(Team *enemies)
 {
     // TODO
-}
+};
 
 
 int Team::stillAlive() const
@@ -65,7 +65,7 @@ int Team::stillAlive() const
     }
 
     return stillAlives;
-}
+};
 
 
 string Team::print() const
@@ -79,5 +79,4 @@ string Team::print() const
     {
         _ninjas[i]->print();
     }
-}
-
+};

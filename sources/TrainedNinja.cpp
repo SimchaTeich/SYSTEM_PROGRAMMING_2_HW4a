@@ -7,4 +7,4 @@ TrainedNinja::TrainedNinja(const string& name, Point& location)
 {
     _hitPoints = 120;
     _speed = 12;
-}
+};

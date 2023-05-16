@@ -7,4 +7,4 @@ YoungNinja::YoungNinja(const string& name, Point& location)
 {
     _hitPoints = 100;
     _speed = 14;
-}
+};

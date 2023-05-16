@@ -35,7 +35,6 @@ double Point::distance(const Point& other) const
 string Point::print() const
 {
     string pointString = "(" + std::to_string(_x) + ", " + std::to_string(_y) + ")";
-    cout << pointString << endl;
     return pointString;
 };
 

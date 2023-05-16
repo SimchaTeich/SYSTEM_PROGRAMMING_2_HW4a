@@ -68,8 +68,6 @@ string Character::print() const
 
     characterString += ", " + _location.print();
 
-
-    cout << characterString << endl;
     return characterString;
 };
 

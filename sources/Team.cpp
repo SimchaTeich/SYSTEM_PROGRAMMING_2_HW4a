@@ -14,6 +14,8 @@ Team::Team(Character *captain)
 
 void Team::add(Character *player)
 {
+    if(player->inTeam()) throw "Cannot add player to group!";
+
     if(_amountOfCowboys + _amountOfNinjas < MAX_PLAYERS)
     {
         if(player->getType() == 'C')
@@ -64,19 +66,25 @@ int Team::stillAlive() const
        if(_ninjas[i]->isAlive()) stillAlives++;
     }
 
-    return stillAlives;
+    //return stillAlives;
+    return 0; // Just for now
 };
 
 
 string Team::print() const
 {
+    string teamString;
     for(int i = 0; i < _amountOfCowboys; i++)
     {
-        _cowboys[i]->print();
+        teamString +=_cowboys[i]->print();
+        teamString += "\n";
     }
 
     for(int i = 0; i < _amountOfNinjas; i++)
     {
-        _ninjas[i]->print();
+        teamString += _ninjas[i]->print();
+        teamString += "\n";
     }
+
+    return teamString;
 };

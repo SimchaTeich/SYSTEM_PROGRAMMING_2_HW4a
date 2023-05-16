@@ -8,7 +8,7 @@ namespace ariel
     class TrainedNinja : public Ninja
     {
     public:
-        TrainedNinja(const string& name, const Point& location);
+        TrainedNinja(const string& name, Point& location);
     };
 };
 

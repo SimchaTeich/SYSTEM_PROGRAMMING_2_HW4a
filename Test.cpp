@@ -121,9 +121,12 @@ TEST_CASE("Old Ninja")
     alice.slash(&bob);
     alice.slash(&bob);
     alice.slash(&bob);
+    alice.slash(&bob);
     alice.slash(&eve);
     alice.slash(&eve);
     alice.slash(&eve);
+    alice.slash(&eve);
+    
     CHECK_EQ(bob.isAlive(), false);
     CHECK_EQ(eve.isAlive(), false);
 }

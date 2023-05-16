@@ -7,7 +7,6 @@ Ninja::Ninja(const string& name, Point& location)
     : Character(name, location)
 {
     _type = 'N';
-    _hitPoints = 0;
     _speed = 0;
 }
 

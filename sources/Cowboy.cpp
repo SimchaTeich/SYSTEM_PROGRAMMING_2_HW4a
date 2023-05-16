@@ -2,11 +2,12 @@
 
 using namespace ariel;
 
-Cowboy::Cowboy(const string& name, Point& location)
+Cowboy::Cowboy(const string& name, Point location)
     : Character(name, location)
 {
     _type = 'C';
     _hitPoints = 110;
+    _bullets = 0;
     reload();
 };
 

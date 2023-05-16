@@ -13,7 +13,9 @@ Ninja::Ninja(const string& name, Point location)
 
 void Ninja::move(Character *other)
 {
-    _location = Point::moveToWards(_location, other->getLocation(), _speed);
+    // move as match you can toward the other.
+    int distaneToMove = distance(other) > _speed ? _speed : distance(other);
+    _location = Point::moveToWards(_location, other->getLocation(), distaneToMove);
 };
 
 

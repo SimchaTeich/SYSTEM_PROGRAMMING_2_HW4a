@@ -11,7 +11,7 @@ namespace ariel
         int _bullets;
 
     public:
-        Cowboy(const string& name, Point& location);
+        Cowboy(const string& name, Point location);
 
         /*
         * If we are alive, and if we have bullets left,

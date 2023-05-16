@@ -41,18 +41,24 @@ string Point::print() const
 
 // Helps after some changes:
 // https://stackoverflow.com/questions/1800138/given-a-start-and-end-point-and-a-distance-calculate-a-point-along-a-line
+//https://stackoverflow.com/questions/13302396/given-two-points-find-a-third-point-on-the-line
 Point Point::moveToWards(const Point& src, const Point& dst, double distance)
 {
+    // clac the vector
     double vx = dst._x - src._x;
     double vy = dst._y - src._y;
 
     double mag = sqrt(vx * vx + vy * vy);
 
+    // normalize the vector
     vx /= mag;
     vy /= mag;
 
-    double new_x = src._x + vx * (mag - distance);
-    double new_y = src._y + vy * (mag - distance);
+    vx *= distance;
+    vy *= distance;
+
+    double new_x = src._x + vx;
+    double new_y = src._y + vy;
 
     return Point(new_x, new_y);
 }
